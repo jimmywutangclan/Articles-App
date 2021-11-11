@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.light {
+  background-color: gainsboro;
+  color: black;
+}
+
+.dark {
+  background-color: #202020;
+  color: gainsboro;
+}
+
+.body {
+  padding: 10px;
+  flex: auto;
+}
+
+.articlepreview {
+  padding: 10px;
+  margin: 10px;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+
+.dark .articlepreview{
+  border: 2px white solid;
+}
+
+.header {
+  padding: 10px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px black solid;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
+
+.dark a {
+  color: gainsboro;
+}
+
+.dark a:hover {
+  color: snow;
+}
+
+.dark button {
+  color: gainsboro;
+  background-color: black;
+}
+
+.dark .header {
+  border-bottom: 1px gainsboro solid;
+}
+
+.footer {
+  padding: 10px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px black solid;
+}
+
+.dark .footer {
+  border-top: 1px gainsboro solid;
+}
