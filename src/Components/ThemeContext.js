@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react'
 
-const { Provider, Consumer } = createContext();
+const ThemeContext = createContext();
 
 function ThemeContextProvider(props) {
 
@@ -11,10 +11,10 @@ function ThemeContextProvider(props) {
     }
 
     return (
-        <Provider value={{theme, toggleTheme}}>
+        <ThemeContext.Provider value={{theme, toggleTheme}}>
             {props.children}
-        </Provider>
+        </ThemeContext.Provider>
     )
 }
 
-export { ThemeContextProvider, Consumer as ThemeContextConsumer }
+export { ThemeContext, ThemeContextProvider }
