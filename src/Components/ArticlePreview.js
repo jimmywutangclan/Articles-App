@@ -7,7 +7,7 @@ export default function ArticlePreview(props) {
             {
                 (context) => (
                     <div className='articlepreview'>
-                        <h2>{props.title}</h2>
+                        <a href={'/articles/' + props.id}><h2>{props.title}</h2></a>
                         <p>{props.body}</p>
                     </div>
                 )
