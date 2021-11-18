@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -26,11 +30,6 @@ code {
 .dark {
   background-color: #202020;
   color: gainsboro;
-}
-
-.body {
-  padding: 10px;
-  flex: auto;
 }
 
 .articlepreview {
@@ -89,4 +88,20 @@ a:hover {
 
 .dark .footer {
   border-top: 1px gainsboro solid;
+}
+
+.contents {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.body {
+  flex: 1 75%;
+  padding: 10px;
+}
+
+.sidebar {
+  flex: 1 25%;
+  padding: 10px;
 }

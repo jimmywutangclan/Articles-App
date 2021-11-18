@@ -8,7 +8,7 @@ export default function ArticleApp(props) {
     const articleHtml = props.articles.map((article) => <ArticlePreview title={article.title} body={article.body} id={x++}/>);
 
     return (
-        <div className={'body'}>
+        <div className={'article_list'}>
             {articleHtml}
         </div>
     )

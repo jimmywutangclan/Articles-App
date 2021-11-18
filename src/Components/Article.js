@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router'
+import { Link } from 'react-router-dom';
 
 export default function Article(props) {
     const { id } = useParams();
@@ -12,6 +13,7 @@ export default function Article(props) {
 
     return (
         <div class={'body'}>
+            <Link to="/">Back</Link>
             <h1>{props.articles[id].title}</h1>
             <p>{props.articles[id].body}</p>
         </div>
